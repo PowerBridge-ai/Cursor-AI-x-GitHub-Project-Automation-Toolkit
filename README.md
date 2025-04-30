@@ -157,6 +157,48 @@ This toolkit requires the GitHub MCP Server to be installed in Cursor. The MCP S
 | | `generate report` | Generate progress report | "Generate sprint progress report" |
 | | `show metrics` | Display project metrics | "Show metrics for current sprint" |
 
+<<<<<<< HEAD
+=======
+## 📚 Documentation
+
+### 🎯 Core Guides
+- [Project Creation Guide](docs/project-creation-guide.md) - Complete guide for setting up new projects
+- [Documentation Standards](docs/documentation-standards.md) - Standards for maintaining documentation
+- [GitHub Project Automation](docs/github-project-automation.md) - Detailed automation workflows
+- [Voice Command Guide](docs/voice-commands.md) - Using voice commands with Cursor
+- [Chat Prompt Guide](docs/chat-prompts.md) - Using chat commands with Cursor
+- [Workflow Guide](docs/workflow-guide.md) - General workflow documentation
+
+### 📋 Templates
+- [Project Templates](templates/github/project-templates/README.md) - GitHub project templates
+- [Issue Templates](templates/github/issue-templates/README.md) - Standard issue templates
+- [Workflow Templates](templates/github/workflow-templates/README.md) - GitHub Actions workflows
+
+### 🔧 Technical Documentation
+- [API Integration Guide](docs/technical/api-integration.md) - GitHub API integration details
+- [Voice Processing Guide](docs/technical/voice-processing.md) - Voice command processing
+- [Chat Processing Guide](docs/technical/chat-processing.md) - Chat command processing
+- [Project Board Automation](docs/technical/project-automation.md) - Board automation details
+
+### 🔄 Workflow Documentation
+- [Task Management Workflow](docs/workflows/task-workflow.md) - Task creation and management
+- [Documentation Workflow](docs/workflows/documentation-workflow.md) - Documentation maintenance
+- [Project Board Workflow](docs/workflows/project-board-workflow.md) - Board management
+- [Integration Workflow](docs/workflows/integration-workflow.md) - System integration
+
+### 📊 Development Resources
+- [Development Guide](docs/development/getting-started.md) - Getting started guide
+- [Contributing Guide](docs/development/contributing.md) - Contribution guidelines
+- [Testing Guide](docs/development/testing.md) - Testing procedures
+- [Deployment Guide](docs/development/deployment.md) - Deployment instructions
+
+### 🎓 Tutorials
+- [Quick Start Tutorial](docs/tutorials/quick-start.md) - Getting started quickly
+- [Voice Command Tutorial](docs/tutorials/voice-commands.md) - Using voice commands
+- [Project Setup Tutorial](docs/tutorials/project-setup.md) - Setting up a new project
+- [Automation Tutorial](docs/tutorials/automation.md) - Setting up automation
+
+>>>>>>> 77b85bc ( Update documentation, workflows, and scripts for project automation toolkit)
 ## 📂 Directory Structure
 
 ```
@@ -192,6 +234,7 @@ CURSOR-GITHUB-MCP-GH-CLI-TOOLKIT/
 - Context awareness
 - Command history
 
+<<<<<<< HEAD
 ## 📚 Documentation
 
 - [Voice Command Guide](docs/voice-commands.md)
@@ -222,6 +265,8 @@ cursor --enable-ai
 ## 📚 Detailed Documentation & Templates
 
 ### 🎨 Template Structure
+=======
+## 🎨 Template Structure
 ```mermaid
 graph TD
     A[Templates] --> B[GitHub Templates]
@@ -236,7 +281,7 @@ graph TD
     style D,E,F,G fill:#9f9,stroke:#333,stroke-width:2px
 ```
 
-### 📋 Issue Templates
+## 📋 Issue Templates
 
 #### 1. 🐛 Bug Report Template
 - **Purpose**: Standardized bug reporting
@@ -260,7 +305,7 @@ graph TD
   - Testing Requirements
 - **Usage**: `gh issue create --template feature-request.md`
 
-### 📊 Project Board Templates
+## 📊 Project Board Templates
 
 #### 1. 🎯 Default Project Board (`default-board.yml`)
 ```yaml
@@ -285,7 +330,7 @@ fields:
   - Priority tracking
   - Label synchronization
 
-### 📝 Core Documentation Templates
+## 📝 Core Documentation Templates
 
 #### 1. 📋 Task Log Template
 - **Purpose**: Track task progress
@@ -315,7 +360,7 @@ fields:
   - Implementation status
   - Size metrics
 
-### 🔄 Workflow Documentation
+## 🔄 Workflow Documentation
 
 #### 1. 🎤 Voice Command Workflow
 ```mermaid
@@ -362,7 +407,7 @@ sequenceDiagram
   - Cross-referencing
   - Version tracking
 
-### 🎯 Implementation Examples
+## 🎯 Implementation Examples
 
 #### 1. Voice Command Implementation
 ```typescript
@@ -383,8 +428,7 @@ async function handleChatCommand(command: string) {
     await handler.execute(params);
 }
 ```
-
-### 📊 Status Tracking
+## 📊 Status Tracking
 
 #### Task Status Flow
 ```mermaid
@@ -399,7 +443,7 @@ stateDiagram-v2
     Completed --> [*]
 ```
 
-### 🔍 Template Validation
+## 🔍 Template Validation
 
 #### Checklist System
 - [ ] Issue template completeness
@@ -436,4 +480,5 @@ Made with Power, Love, and AI •  ⚡️❤️🤖 •  POWERBRIDGE.AI
 Need help with your ai project, docs, or automation?
 
 Contact us at: Email: powerbridge.ai@gmail.com or visit us at: https://powerbridge.ai
+
 

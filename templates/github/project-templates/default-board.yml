@@ -1,0 +1,130 @@
+name: Default Project Board
+description: Standard project board template with customized fields and views
+
+# Project Fields
+fields:
+  - name: Status
+    type: single_select
+    options:
+      - name: 🔴 Not Started
+        color: '#FF0000'
+      - name: 🟡 In Progress
+        color: '#FFA500'
+      - name: 🟢 Completed
+        color: '#00FF00'
+      - name: ⭕️ Blocked
+        color: '#808080'
+      - name: 🔵 Testing
+        color: '#0000FF'
+      - name: ✅ Verified
+        color: '#008000'
+
+  - name: Priority
+    type: single_select
+    options:
+      - name: 🔥 Critical
+        color: '#FF0000'
+      - name: ⚡ High
+        color: '#FFA500'
+      - name: 📊 Medium
+        color: '#FFFF00'
+      - name: 🔽 Low
+        color: '#00FF00'
+
+  - name: Type
+    type: single_select
+    options:
+      - name: 🐛 Bug
+        color: '#FF0000'
+      - name: ✨ Feature
+        color: '#00FF00'
+      - name: 📝 Documentation
+        color: '#0000FF'
+      - name: ⚡ Enhancement
+        color: '#FFA500'
+
+  - name: Sprint
+    type: iteration
+    configuration:
+      start_day: Monday
+      duration: 14
+      iterations:
+        - name: Sprint 1
+        - name: Sprint 2
+        - name: Sprint 3
+
+  - name: Story Points
+    type: number
+    configuration:
+      range: [1, 13]
+
+# Views
+views:
+  - name: Board
+    type: board
+    fields:
+      - Status
+      - Priority
+      - Type
+      - Sprint
+      - Story Points
+    configuration:
+      group_by: Status
+      sort_by: Priority
+
+  - name: Sprint Planning
+    type: table
+    fields:
+      - Status
+      - Priority
+      - Type
+      - Sprint
+      - Story Points
+    configuration:
+      group_by: Sprint
+      sort_by: Priority
+
+  - name: Roadmap
+    type: roadmap
+    fields:
+      - Status
+      - Sprint
+    configuration:
+      group_by: Sprint
+
+# Automations
+automations:
+  - name: Mark as In Progress
+    if:
+      - condition: assignee_added
+    then:
+      - set_field:
+          field: Status
+          value: 🟡 In Progress
+
+  - name: Mark as Done
+    if:
+      - condition: closed
+    then:
+      - set_field:
+          field: Status
+          value: 🟢 Completed
+
+# Labels
+labels:
+  - name: bug
+    color: '#FF0000'
+    description: Something isn't working
+  - name: enhancement
+    color: '#00FF00'
+    description: New feature or request
+  - name: documentation
+    color: '#0000FF'
+    description: Documentation updates
+  - name: help wanted
+    color: '#FFA500'
+    description: Extra attention is needed
+
+---
+
+Made with Power, Love, and AI •  ⚡️❤️🤖 •  POWERBRIDGE.AI 

@@ -71,6 +71,92 @@ cd CURSOR-GITHUB-MCP-GH-CLI-TOOLKIT
 gh auth login
 ```
 
+## 🔌 Required Dependencies
+
+### 🤖 GitHub MCP Server
+This toolkit requires the GitHub MCP Server to be installed in Cursor. The MCP Server enables direct integration with GitHub's API through Cursor.
+
+1. Install GitHub MCP Server:
+   - Repository: [github-mcp-server](https://github.com/github/github-mcp-server)
+   - Follow installation instructions in the repository
+
+### 🔗 Available GitHub MCP Connections
+
+| Category | Command | Description |
+|----------|---------|-------------|
+| 📝 Issues | `add_issue_comment` | Add a comment to an issue |
+| | `create_issue` | Create a new issue |
+| | `get_issue` | Get issue details |
+| | `get_issue_comments` | Get issue comments |
+| | `list_issues` | List repository issues |
+| | `update_issue` | Update an existing issue |
+| 🔄 Pull Requests | `add_pull_request_review_comment` | Add a review comment |
+| | `create_pull_request` | Create a new PR |
+| | `create_pull_request_review` | Create a PR review |
+| | `get_pull_request` | Get PR details |
+| | `get_pull_request_comments` | Get PR comments |
+| | `get_pull_request_files` | Get PR changed files |
+| | `get_pull_request_reviews` | Get PR reviews |
+| | `get_pull_request_status` | Get PR status |
+| | `list_pull_requests` | List repository PRs |
+| | `merge_pull_request` | Merge a PR |
+| | `update_pull_request` | Update a PR |
+| | `update_pull_request_branch` | Update PR branch |
+| 📂 Repository | `create_branch` | Create a new branch |
+| | `create_repository` | Create a new repository |
+| | `create_or_update_file` | Create/update a file |
+| | `fork_repository` | Fork a repository |
+| | `get_commit` | Get commit details |
+| | `get_file_contents` | Get file contents |
+| | `list_branches` | List repository branches |
+| | `list_commits` | List repository commits |
+| | `push_files` | Push multiple files |
+| 🔍 Search | `search_code` | Search code |
+| | `search_issues` | Search issues |
+| | `search_repositories` | Search repositories |
+| | `search_users` | Search users |
+| 🔒 Security | `get_code_scanning_alert` | Get code scanning alert |
+| | `get_secret_scanning_alert` | Get secret scanning alert |
+| | `list_code_scanning_alerts` | List code scanning alerts |
+| | `list_secret_scanning_alerts` | List secret scanning alerts |
+| 👤 User | `get_me` | Get authenticated user details |
+
+### 🎯 Voice & Project Management Commands
+
+| Category | Command | Description | Example |
+|----------|---------|-------------|----------|
+| 📝 Task Management | `create task` | Create a new task or issue | "Create task: Implement user authentication" |
+| | `edit task` | Modify existing task details | "Edit task AUTH-001: Update description" |
+| | `update task` | Update task progress or details | "Update task AUTH-001: Added JWT implementation" |
+| | `delete task` | Remove a task | "Delete task AUTH-001" |
+| | `assign task` | Assign task to team member | "Assign task AUTH-001 to @developer" |
+| 📊 Status Management | `update status` | Change task status | "Update status of AUTH-001 to in progress" |
+| | `mark blocked` | Mark task as blocked | "Mark AUTH-001 as blocked: waiting for API" |
+| | `mark complete` | Mark task as complete | "Mark AUTH-001 as complete" |
+| | `set priority` | Set task priority | "Set AUTH-001 priority to high" |
+| 🏃 Sprint Management | `add to sprint` | Add task to current sprint | "Add AUTH-001 to current sprint" |
+| | `remove from sprint` | Remove task from sprint | "Remove AUTH-001 from sprint" |
+| | `move to sprint` | Move task to different sprint | "Move AUTH-001 to next sprint" |
+| | `set sprint goal` | Set or update sprint goal | "Set sprint goal: Complete auth system" |
+| 🏷️ Labels & Tags | `add label` | Add label to task | "Add label security to AUTH-001" |
+| | `remove label` | Remove label from task | "Remove label frontend from AUTH-001" |
+| | `set type` | Set task type | "Set AUTH-001 type to feature" |
+| 📅 Timeline Management | `set deadline` | Set task deadline | "Set AUTH-001 deadline to next Friday" |
+| | `set milestone` | Set task milestone | "Set AUTH-001 milestone to v1.0" |
+| | `update timeline` | Update task timeline | "Update AUTH-001 timeline: needs 2 more days" |
+| 📊 Project Management | `create project` | Create new project | "Create project: Authentication System" |
+| | `set project status` | Update project status | "Update project Auth System status to active" |
+| | `add project member` | Add member to project | "Add @developer to Auth System project" |
+| 📝 Documentation | `generate docs` | Generate documentation | "Generate API docs for auth endpoints" |
+| | `update docs` | Update documentation | "Update AUTH-001 documentation with new endpoints" |
+| | `add notes` | Add development notes | "Add notes to AUTH-001: JWT implementation details" |
+| 🔍 Search & Filter | `find task` | Search for tasks | "Find all tasks labeled security" |
+| | `show blocked` | Show blocked tasks | "Show all blocked tasks in current sprint" |
+| | `list tasks` | List tasks by criteria | "List all high priority tasks" |
+| 📈 Progress Tracking | `show progress` | Show task/project progress | "Show progress on AUTH-001" |
+| | `generate report` | Generate progress report | "Generate sprint progress report" |
+| | `show metrics` | Display project metrics | "Show metrics for current sprint" |
+
 ## 📂 Directory Structure
 
 ```
@@ -323,8 +409,6 @@ stateDiagram-v2
 - [ ] Status synchronization
 - [ ] Error handling
 
-
-
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -348,8 +432,6 @@ If you find this toolkit helpful, please consider giving it a star! For issues, 
 ---
 
 Made with Power, Love, and AI •  ⚡️❤️🤖 •  POWERBRIDGE.AI
-
-
 
 Need help with your ai project, docs, or automation?
 

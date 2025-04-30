@@ -1,7 +1,57 @@
 # 🤖 Cursor AI x GitHub Project Automation Toolkit
 
+<div align="center">
+  <p float="left">
+    <img src="https://raw.githubusercontent.com/PowerBridge-ai/CURSOR-GITHUB-MCP-GH-CLI-TOOLKIT/main/assets/cursor.jpg" height="100" />
+    <img src="https://raw.githubusercontent.com/PowerBridge-ai/CURSOR-GITHUB-MCP-GH-CLI-TOOLKIT/main/assets/github-logo.png" height="100" />
+  </p>
+</div>
+
 ## 🎯 Overview
-A comprehensive toolkit for automating GitHub project management using Cursor AI, GitHub MCP commands, and GitHub CLI. This toolkit provides standardized workflows, templates, and automation scripts for efficient project management and documentation.
+A powerful toolkit that enables seamless task management through Cursor AI's chat and voice prompts, automatically syncing with GitHub Projects. Simply speak or type your tasks into Cursor's chat window, and let the automation handle the rest - from creating issues to updating project boards.
+
+### 🗣️ Key Features
+- **Voice Command Integration**: Speak your tasks directly into Cursor
+- **Natural Language Processing**: Convert casual prompts into structured tasks
+- **Automatic GitHub Sync**: Tasks automatically create issues and update project boards
+- **Smart Context Awareness**: Maintains context across conversations
+- **Template Automation**: Standardized issue and project templates
+- **Real-time Updates**: Instant GitHub project board updates
+
+## 🎤 Voice Command Examples
+
+```bash
+# Create a new task
+"Create a task to implement user authentication with JWT"
+
+# Update task status
+"Mark the authentication task as in progress"
+
+# Add to sprint
+"Add the auth task to current sprint"
+
+# Create documentation
+"Generate API documentation for auth endpoints"
+```
+
+## 💬 Chat Prompt Examples
+
+```markdown
+# Task Creation
+/task "Implement user authentication"
+/priority high
+/labels backend, security
+/assign @developer
+
+# Status Update
+/update TASK-001 "Added JWT implementation"
+/status in-progress
+/progress 60
+
+# Sprint Management
+/sprint add TASK-001
+/milestone v1.0
+```
 
 ## 🚀 Quick Start
 
@@ -26,62 +76,61 @@ gh auth login
 ```
 CURSOR-GITHUB-MCP-GH-CLI-TOOLKIT/
 ├── workflows/                    # Core workflow definitions
-│   ├── checkpoint-workflow.md    # Progress tracking workflow
-│   ├── directory-scan-workflow.md # File discovery workflow
-│   ├── documentation-workflow.md # Documentation standards
-│   ├── project-board-workflow.md # GitHub project management
-│   ├── task-update-workflow.md  # Task status updates
-│   └── ai-automation-workflow.md # AI assistant guide
+│   ├── voice-command-workflow.md # Voice command processing
+│   ├── chat-prompt-workflow.md   # Chat prompt processing
+│   └── github-sync-workflow.md   # GitHub synchronization
 ├── templates/                    # Document templates
 │   ├── core/                    # Core document templates
-│   │   ├── task-log-template.md     # Task progress tracking
-│   │   ├── task-list-template.md    # Task breakdown
-│   │   ├── dev-notes-template.md    # Technical details
-│   │   └── file-tree-template.md    # Project structure
 │   └── github/                  # GitHub templates
-│       ├── issue-templates/     # Issue templates
-│       └── project-templates/   # Project board templates
 ├── scripts/                     # Automation scripts
 │   ├── powershell/             # PowerShell automation
 │   └── cli/                    # CLI tools and scripts
 └── docs/                       # Documentation
-    ├── setup-guide.md         # Initial setup instructions
-    └── workflow-guide.md      # Workflow documentation
 ```
 
-## 🛠️ Features
+## 🎯 Voice Command Features
 
-- **📝 Document Templates**: Standardized templates for project documentation
-- **🔄 Workflow Automation**: Predefined workflows for common tasks
-- **🤖 AI Integration**: Cursor AI-powered automation and assistance
-- **📊 Project Management**: GitHub project board templates and automation
-- **🔧 PowerShell Scripts**: Utility scripts for automation tasks
-- **📋 Issue Templates**: Standardized issue and PR templates
+- Natural language task creation
+- Status updates via voice
+- Sprint management commands
+- Documentation generation
+- Issue assignment and labeling
+- Project board automation
+
+## 💬 Chat Prompt Features
+
+- Slash command support
+- Rich text formatting
+- Template insertion
+- Quick actions
+- Context awareness
+- Command history
 
 ## 📚 Documentation
 
-- [Setup Guide](docs/setup-guide.md)
+- [Voice Command Guide](docs/voice-commands.md)
+- [Chat Prompt Guide](docs/chat-prompts.md)
 - [Workflow Guide](docs/workflow-guide.md)
-- [AI Documentation Workflow](workflows/_ai-documentation-workflow.md)
 - [Project Templates](templates/github/project-templates/README.md)
 
 ## 🔧 Usage
 
-1. **Create New Project**
+1. **Start Cursor AI**
 ```bash
-gh project create --owner [your-org] --title "[Project Name]" --template default-board.yml
+# Open Cursor and enable AI features
+cursor --enable-ai
 ```
 
-2. **Set Up Documentation**
+2. **Initialize Voice Commands**
 ```bash
-# Copy core templates
-cp templates/core/* your-project/docs/
+# Set up voice command recognition
+./scripts/setup-voice-commands.ps1
 ```
 
-3. **Configure Automation**
+3. **Configure Chat Prompts**
 ```bash
-# Run setup script
-./scripts/powershell/setup-automation.ps1
+# Set up chat prompt handlers
+./scripts/setup-chat-prompts.ps1
 ```
 
 ## 🤝 Contributing
@@ -99,6 +148,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## ⭐ Support
 
 If you find this toolkit helpful, please consider giving it a star! For issues, questions, or suggestions, please open an issue in the repository.
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/PowerBridge-ai/CURSOR-GITHUB-MCP-GH-CLI-TOOLKIT/main/assets/powerbridge-logo.png" height="100" />
+</div>
 
 ---
 

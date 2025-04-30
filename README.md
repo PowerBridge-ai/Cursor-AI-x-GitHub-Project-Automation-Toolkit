@@ -155,5 +155,5 @@ If you find this toolkit helpful, please consider giving it a star! For issues, 
 
 ---
 
-Made with Power, Love, and AI •  ⚡️❤️�� •  POWERBRIDGE.AI
+Made with Power, Love, and AI •  ⚡️❤️🤖 •  POWERBRIDGE.AI
 

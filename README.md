@@ -133,30 +133,6 @@ cursor --enable-ai
 ./scripts/setup-chat-prompts.ps1
 ```
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## ⭐ Support
-
-If you find this toolkit helpful, please consider giving it a star! For issues, questions, or suggestions, please open an issue in the repository.
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/PowerBridge-ai/CURSOR-GITHUB-MCP-GH-CLI-TOOLKIT/main/assets/powerbridge-logo.png" height="100" />
-</div>
-
----
-
-Made with Power, Love, and AI •  ⚡️❤️🤖 •  POWERBRIDGE.AI
-
 ## 📚 Detailed Documentation & Templates
 
 ### 🎨 Template Structure
@@ -346,4 +322,36 @@ stateDiagram-v2
 - [ ] Command implementation
 - [ ] Status synchronization
 - [ ] Error handling
+
+
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## ⭐ Support
+
+If you find this toolkit helpful, please consider giving it a star! For issues, questions, or suggestions, please open an issue in the repository.
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/PowerBridge-ai/CURSOR-GITHUB-MCP-GH-CLI-TOOLKIT/main/assets/powerbridge-logo.png" height="100" />
+</div>
+
+---
+
+Made with Power, Love, and AI •  ⚡️❤️🤖 •  POWERBRIDGE.AI
+
+
+
+Need help with your ai project, docs, or automation?
+
+Contact us at: Email: powerbridge.ai@gmail.com or visit us at: https://powerbridge.ai
 

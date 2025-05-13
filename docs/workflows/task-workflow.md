@@ -240,4 +240,4 @@ automationEngine.addRule('pull_request_merged', async (context) => {
 
 ---
 
-Made with Power, Love, and AI •  ⚡️❤️�� •  POWERBRIDGE.AI
+Made with Power, Love, and AI •  ⚡️❤️🤖 •  POWERBRIDGE.AI

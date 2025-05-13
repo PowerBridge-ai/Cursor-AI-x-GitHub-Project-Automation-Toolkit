@@ -288,4 +288,4 @@ validator.addRule('templates', async (docs) => {
 
 ---
 
-Made with Power, Love, and AI •  ⚡️❤️�� •  POWERBRIDGE.AI
+Made with Power, Love, and AI •  ⚡️❤️🤖 •  POWERBRIDGE.AI

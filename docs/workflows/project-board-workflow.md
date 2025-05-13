@@ -285,4 +285,4 @@ reportGenerator.addReport('daily_status', {
 
 ---
 
-Made with Power, Love, and AI •  ⚡️❤️�� •  POWERBRIDGE.AI
+Made with Power, Love, and AI •  ⚡️❤️🤖 •  POWERBRIDGE.AI

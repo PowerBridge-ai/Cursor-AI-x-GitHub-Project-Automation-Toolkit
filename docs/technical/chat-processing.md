@@ -305,4 +305,4 @@ async function processCommandChain(input: string): Promise<void> {
 
 ---
 
-Made with Power, Love, and AI •  ⚡️❤️�� •  POWERBRIDGE.AI
+Made with Power, Love, and AI •  ⚡️❤️🤖 •  POWERBRIDGE.AI
